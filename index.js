@@ -8,9 +8,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/auth", proxy("https://multivendorapp-user-service.onrender.com/"));
+app.use("/auth", proxy("https://authenticationservice-gq22.onrender.com/"));
 app.use("/shop", proxy("https://multivendorplatform-shopping-service.onrender.com")); 
-app.use("/products", proxy("https://multivendorapp-products-microservice.onrender.com"));
+app.use("/products", proxy("https://orderservice-0zrx.onrender.com"));
 
 app.listen(port, () => {
   console.log(`Gateway is Listening to Port ${port}`);
